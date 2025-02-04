@@ -350,7 +350,7 @@ function AdminPanel() {
                 <div className="ml-4 flex-grow">
                   <h3 className="font-semibold">{item.name}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    {item.category} - ${item.price}
+                    {item.category} - Rs.{item.price}
                     {item.discount > 0 && ` (${item.discount}% OFF)`}
                   </p>
                 </div>

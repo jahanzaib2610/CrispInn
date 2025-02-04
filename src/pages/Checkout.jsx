@@ -151,7 +151,7 @@ function Checkout() {
 
         <div className="border-t dark:border-gray-700 pt-4 mb-6">
           <div className="text-xl font-bold">
-            Total Amount: ${total.toFixed(2)}
+            Total Amount: Rs.{total.toFixed(2)}
           </div>
         </div>
 

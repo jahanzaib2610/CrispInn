@@ -79,11 +79,11 @@ function Home() {
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-lg font-bold">
-                        ${(item.price * (1 - item.discount / 100)).toFixed(2)}
+                        Rs.{(item.price * (1 - item.discount / 100)).toFixed(2)}
                       </span>
                       {item.discount && (
                         <span className="ml-2 text-sm line-through text-gray-500">
-                          ${item.price}
+                          Rs.{item.price}
                         </span>
                       )}
                     </div>
@@ -132,7 +132,7 @@ function Home() {
                         {item.ingredients.join(", ")}
                       </p>
                       <div className="flex items-center justify-between">
-                        <span className="text-lg font-bold">${item.price}</span>
+                        <span className="text-lg font-bold">Rs.{item.price}</span>
                         <Link
                           to={`/food/${item.id}`}
                           className="btn btn-primary"

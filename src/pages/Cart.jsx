@@ -41,7 +41,7 @@ function Cart() {
               <p className="text-gray-600 dark:text-gray-400">
                 Quantity: {item.quantity}
               </p>
-              <p className="font-bold">${(item.price * item.quantity).toFixed(2)}</p>
+              <p className="font-bold">Rs.{(item.price * item.quantity).toFixed(2)}</p>
             </div>
             <button
               onClick={() => dispatch(removeFromCart(item.id))}
@@ -55,7 +55,7 @@ function Cart() {
 
       <div className="flex items-center justify-between mb-8">
         <div className="text-xl font-bold">
-          Total: ${total.toFixed(2)}
+          Total: Rs.{total.toFixed(2)}
         </div>
         <Link to="/checkout" className="btn btn-primary">
           Proceed to Checkout
